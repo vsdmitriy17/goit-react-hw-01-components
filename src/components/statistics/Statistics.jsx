@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 // import s from './Statistics.module.css';
-import randomBgColor from '../../randomBgColor/randomBgColor.js';
+import randomBgColor from './randomBgColor/randomBgColor.js';
 
 export default function Statistics({ title, data }) {
     return (
