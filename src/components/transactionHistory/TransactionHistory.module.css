@@ -1,0 +1,23 @@
+.transactionHistory {
+    border-spacing: 1px;
+    width: 600px;
+}
+
+thead {
+    background-color: rgb(31, 187, 210);
+}
+
+th {
+    padding: 10px 0;
+    color: azure;
+}
+
+td {
+    background-color: rgb(253, 253, 253);
+    padding: 5px 0;
+    text-align: center;
+}
+
+td.odd {
+    background-color: rgb(236, 241, 244);
+}

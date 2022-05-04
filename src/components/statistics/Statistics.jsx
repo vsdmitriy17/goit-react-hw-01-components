@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
-// import s from './Statistics.module.css';
+import styles from './Statistics.module.css';
 import randomBgColor from './randomBgColor/randomBgColor.js';
 
 export default function Statistics({ title, data }) {
     return (
-        <section className="statistics">
-            {title && <h2 className="title">{title}</h2>}
+        <section className={styles.statistics}>
+            {title && <h2 className={styles.title}>{title}</h2>}
 
-            <ul className="list">
+            <ul className={styles.list}>
                 {data.map(item => (
                     <li
-                        className="item"
+                        className={styles.item}
                         key={item.id}
                         style={{ backgroundColor: randomBgColor() }}
                     >
-                        <span className="label">{item.label}</span>
-                        <span className="percentage">{item.percentage}%</span>
+                        <span className={styles.label}>{item.label}</span>
+                        <span className={styles.percentage}>{item.percentage}%</span>
                     </li>
                 ))}
             </ul>

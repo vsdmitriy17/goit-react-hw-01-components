@@ -1,3 +1,4 @@
+import styles from './App.module.css';
 import Profile from './components/profile/Profile.jsx';
 import Statistics from './components/statistics/Statistics.jsx';
 import FriendList from './components/friendList/FriendList.jsx';
@@ -9,7 +10,7 @@ import transactions from './json/transactions.json';
 
 export default function App() {
   return (
-    <div>
+    <div className={styles.container}>
       <Profile
         userName={user.username}
         tag={user.tag}

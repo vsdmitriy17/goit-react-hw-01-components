@@ -1,0 +1,43 @@
+.item {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid rgb(23, 23, 23);
+    box-shadow: 2px 2px 14px -6px rgba(75, 75, 78, 1);
+    transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+        box-shadow 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 14px -6px rgb(192, 180, 112);
+}
+
+.item+.item {
+    margin-top: 10px;
+}
+
+.avatar {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(195, 225, 215);
+}
+
+.name {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.status {
+    margin-right: 20px;
+    border-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
